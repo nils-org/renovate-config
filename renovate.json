@@ -3,6 +3,7 @@
   "extends": [
     "config:base"
   ],
+  "commitMessagePrefix": "(maint)"
   "labels": ["dependencies"],
   "cake": {
     "addLabels": ["cake", "build"]
