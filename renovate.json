@@ -14,5 +14,11 @@
   },
   "nuget": {
     "addLabels": [".NET"]
-  }
+  },
+  "packageRules": [
+    {
+      "matchPackageNames": ["cake.tool"],
+      "enabled": false
+    }
+  ]
 }
