@@ -10,7 +10,7 @@
     "addLabels": ["cake", "build"]
   },
   "github-actions": {
-    "addLabels": ["github_actions", "build"]
+    "addLabels": ["github_actions"]
   },
   "nuget": {
     "addLabels": [".NET"]
@@ -19,6 +19,24 @@
     {
       "matchPackageNames": ["cake.tool"],
       "enabled": false
+    },
+    {
+      "matchPackagePrefixes": ["actions/"],
+      "labels": ["build"],
+      "automerge": true,
+      "automergeType": "pr",
+      "platformAutomerge": true
+    },
+     {
+      "matchPackageNames": [
+        "Spectre.Console",
+        "Spectre.Console.Cli",
+        "Spectre.Console.Testing",
+        "Spectre.Console.ImageSharp",
+        "Spectre.Console.Analyzer"
+      ],
+      "groupName": "Spectre.Console",
+      "groupSlug": "spectre-console"
     }
   ]
 }
