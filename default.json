@@ -1,20 +1,13 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
+    "github>nils-org/renovate-config:minimal"
   ],
+  "cake": {
+    "addLabels": ["build"]
+  },
   "dependencyDashboard": false,
   "commitMessagePrefix": "(maint)",
-  "labels": ["dependencies"],
-  "cake": {
-    "addLabels": ["cake", "build"]
-  },
-  "github-actions": {
-    "addLabels": ["github_actions"]
-  },
-  "nuget": {
-    "addLabels": [".NET"]
-  },
   "packageRules": [
     {
       "matchPackageNames": ["cake.tool"],

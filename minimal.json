@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:best-practices"],
+  "labels": ["dependencies"],
+  "description": "This is the minimal base configuration.",
+  "cake": {
+    "addLabels": ["cake"]
+  },
+  "github-actions": {
+    "addLabels": ["github_actions"]
+  },
+  "nuget": {
+    "addLabels": [".NET"]
+  }
+}

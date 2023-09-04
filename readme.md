@@ -8,6 +8,13 @@ Alternatively, use it like so:
 ```json
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [ "local>nils-org/renovate-config" ]
+  "extends": [ "github>nils-org/renovate-config:minimal" ]
 }
 ```
+
+## Existing presets
+
+Name | Description
+---------|-------
+ minimal | This is the minimal base configuration.
+ default | This is the default: Some weird mesh of settings.
