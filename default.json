@@ -1,35 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>nils-org/renovate-config:minimal"
-  ],
-  "cake": {
-    "addLabels": ["build"]
-  },
-  "dependencyDashboard": false,
-  "commitMessagePrefix": "(maint)",
-  "packageRules": [
-    {
-      "matchPackageNames": ["cake.tool"],
-      "enabled": false
-    },
-    {
-      "matchPackagePrefixes": ["actions/"],
-      "labels": ["build"],
-      "automerge": true,
-      "automergeType": "pr",
-      "platformAutomerge": true
-    },
-     {
-      "matchPackageNames": [
-        "Spectre.Console",
-        "Spectre.Console.Cli",
-        "Spectre.Console.Testing",
-        "Spectre.Console.ImageSharp",
-        "Spectre.Console.Analyzer"
-      ],
-      "groupName": "Spectre.Console",
-      "groupSlug": "spectre-console"
-    }
+    "github>nils-org/renovate-config:legacy"
   ]
 }

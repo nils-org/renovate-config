@@ -17,4 +17,5 @@ Alternatively, use it like so:
 Name | Description
 ---------|-------
  minimal | This is the minimal base configuration.
- default | This is the default: Some weird mesh of settings.
+ default | This is the default: For legacy reasons it points to "legacy".
+ legacy  | This is the old or legacy config. Better move away from it.
